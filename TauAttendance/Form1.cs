@@ -18,10 +18,6 @@ namespace TauAttendance
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
