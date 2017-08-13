@@ -87,6 +87,7 @@
             this.btnAddMember.TabIndex = 4;
             this.btnAddMember.Text = "Add Member";
             this.btnAddMember.UseVisualStyleBackColor = true;
+            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
             // btnDeleteMember
             // 
@@ -97,6 +98,7 @@
             this.btnDeleteMember.TabIndex = 5;
             this.btnDeleteMember.Text = "Delete Member";
             this.btnDeleteMember.UseVisualStyleBackColor = true;
+            this.btnDeleteMember.Click += new System.EventHandler(this.btnDeleteMember_Click);
             // 
             // btnEditAttendance
             // 

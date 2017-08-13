@@ -21,5 +21,15 @@ namespace TauAttendance
         {
            
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

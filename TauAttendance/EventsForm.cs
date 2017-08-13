@@ -17,6 +17,15 @@ namespace TauAttendance
             InitializeComponent();
         }
 
+        private void buttonViewAttendance_Click(object sender, EventArgs e)
+        {
+            EventAttendanceForm attendanceForm = new EventAttendanceForm();
+            attendanceForm.ShowDialog();
+        }
 
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -20,6 +20,36 @@ namespace TauAttendance
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AddEventForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerEvent_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxEventTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
 
         }
     }

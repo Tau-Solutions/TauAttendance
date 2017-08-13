@@ -7,27 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 
 namespace TauAttendance
 {
-    public partial class HomeForm : Form
+    public partial class AddMemberForm : Form
     {
-        public HomeForm()
+        public AddMemberForm()
         {
             InitializeComponent();
         }
 
-
-        private void HomeForm_Load(object sender, EventArgs e)
+        private void btnSaveEvent_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void btnAddEvent_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
-            AddEventForm addForm = new AddEventForm();
-            addForm.ShowDialog();
+            this.Close();
         }
     }
 }

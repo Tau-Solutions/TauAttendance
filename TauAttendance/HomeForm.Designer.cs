@@ -66,6 +66,7 @@
             this.btnPastEvents.TabIndex = 2;
             this.btnPastEvents.Text = "View Past Events";
             this.btnPastEvents.UseVisualStyleBackColor = true;
+            this.btnPastEvents.Click += new System.EventHandler(this.btnPastEvents_Click);
             // 
             // btnViewRoster
             // 
@@ -77,6 +78,7 @@
             this.btnViewRoster.TabIndex = 3;
             this.btnViewRoster.Text = "View Roster";
             this.btnViewRoster.UseVisualStyleBackColor = true;
+            this.btnViewRoster.Click += new System.EventHandler(this.btnViewRoster_Click);
             // 
             // HomeForm
             // 

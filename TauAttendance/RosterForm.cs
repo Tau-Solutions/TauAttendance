@@ -16,5 +16,16 @@ namespace TauAttendance
         {
             InitializeComponent();
         }
+
+        private void btnAddMember_Click(object sender, EventArgs e)
+        {
+            AddMemberForm addMemForm = new AddMemberForm();
+            addMemForm.ShowDialog();
+        }
+
+        private void btnDeleteMember_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
