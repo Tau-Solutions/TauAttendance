@@ -54,6 +54,7 @@
             this.btnAddEvent.TabIndex = 1;
             this.btnAddEvent.Text = "Add Event";
             this.btnAddEvent.UseVisualStyleBackColor = true;
+            this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
             // 
             // btnPastEvents
             // 

@@ -1,6 +1,6 @@
 ﻿namespace TauAttendance
 {
-    partial class saveEventButton
+    partial class AddEventForm
     {
         /// <summary>
         /// Required designer variable.
@@ -92,7 +92,7 @@
             this.closeButton.Text = "Cancel";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // saveEventButton
+            // AddEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.txtBoxEventTitle);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTitle);
-            this.Name = "saveEventButton";
+            this.Name = "AddEventForm";
             this.Text = "AddEventForm";
             this.ResumeLayout(false);
             this.PerformLayout();

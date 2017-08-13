@@ -11,9 +11,9 @@ using System.Windows.Forms;
 namespace TauAttendance
 {
     //comment
-    public partial class saveEventButton : Form
+    public partial class AddEventForm : Form
     {
-        public saveEventButton()
+        public AddEventForm()
         {
             InitializeComponent();
         }

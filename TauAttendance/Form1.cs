@@ -23,5 +23,11 @@ namespace TauAttendance
         {
 
         }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            AddEventForm addForm = new AddEventForm();
+            addForm.ShowDialog();
+        }
     }
 }
