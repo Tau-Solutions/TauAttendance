@@ -20,6 +20,9 @@ namespace TauAttendance
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //This method will take the data inserted into the Text Box and Date Picker
+            //and build a query to insert the event into the database. We should have input 
+            //checking to disallow blank or illegal characters. Prevent SQL injection
             this.Close();
         }
 

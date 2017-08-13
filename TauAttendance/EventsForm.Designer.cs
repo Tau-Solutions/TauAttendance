@@ -109,6 +109,7 @@
             this.Controls.Add(this.listBoxEvents);
             this.Name = "EventsForm";
             this.Text = "EventsForm";
+            this.Load += new System.EventHandler(this.EventsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

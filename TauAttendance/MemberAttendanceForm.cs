@@ -10,23 +10,15 @@ using System.Windows.Forms;
 
 namespace TauAttendance
 {
-    public partial class EventAttendanceForm : Form
+    public partial class MemberAttendanceForm : Form
     {
-        public EventAttendanceForm()
+        public MemberAttendanceForm()
         {
             InitializeComponent();
         }
 
-        private void EventAttendanceForm_Load(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //this method will perform an update statement to the database.
-            //If a value is changed in attendance, then we will update the Attended field
-            //for the name in the Attendance Table.
             this.Close();
         }
 

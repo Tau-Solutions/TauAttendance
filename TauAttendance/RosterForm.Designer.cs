@@ -35,7 +35,7 @@
             this.btnAddMember = new System.Windows.Forms.Button();
             this.btnDeleteMember = new System.Windows.Forms.Button();
             this.btnEditAttendance = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxNames
@@ -109,23 +109,25 @@
             this.btnEditAttendance.TabIndex = 6;
             this.btnEditAttendance.Text = "Edit Attendance";
             this.btnEditAttendance.UseVisualStyleBackColor = true;
+            this.btnEditAttendance.Click += new System.EventHandler(this.btnEditAttendance_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(602, 648);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 38);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Add Member";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(602, 648);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(149, 38);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // RosterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 723);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEditAttendance);
             this.Controls.Add(this.btnDeleteMember);
             this.Controls.Add(this.btnAddMember);
@@ -149,6 +151,6 @@
         private System.Windows.Forms.Button btnAddMember;
         private System.Windows.Forms.Button btnDeleteMember;
         private System.Windows.Forms.Button btnEditAttendance;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnExit;
     }
 }

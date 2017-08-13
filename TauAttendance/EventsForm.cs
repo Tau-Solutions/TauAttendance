@@ -27,5 +27,12 @@ namespace TauAttendance
         {
             this.Close();
         }
+
+        private void EventsForm_Load(object sender, EventArgs e)
+        {
+            //this method should perform a query of the database to grab all events in the
+            //Events table. The event title and dates will be loaded into their
+            //own listBox
+        }
     }
 }

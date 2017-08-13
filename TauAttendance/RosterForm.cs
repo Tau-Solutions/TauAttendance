@@ -27,5 +27,16 @@ namespace TauAttendance
         {
             this.Close();
         }
+
+        private void btnEditAttendance_Click(object sender, EventArgs e)
+        {
+            MemberAttendanceForm memAttendanceForm = new MemberAttendanceForm();
+            memAttendanceForm.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
