@@ -1,0 +1,10 @@
+CREATE TABLE Attendance(
+  Event_Title   TEXT, 
+   Member_name   TEXT, 
+   Attended   BOOL,
+  FOREIGN KEY(Event_title) REFERENCES Events(Title),
+  FOREIGN KEY(Member_name) REFERENCES Members(Name)
+)
+
+CREATE TABLE "Events" ("Title" VARCHAR NOT NULL , "Date" DATETIME, "Mandatory" BOOL)
+CREATE TABLE "Members" ("Name" VARCHAR NOT NULL )

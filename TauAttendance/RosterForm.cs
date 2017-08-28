@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace TauAttendance
 {
     public partial class RosterForm : Form
     {
+        SQLiteConnection dbConnection;
+
         public RosterForm()
         {
             InitializeComponent();
@@ -37,6 +40,23 @@ namespace TauAttendance
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void RosterForm_Load(object sender, EventArgs e)
+        {
+            dbConnection = new SQLiteConnection("Data Source=TauAttendance.sqlite;Version=3;");
+            dbConnection.Open();
+            string memberQuery = "SELECT * FROM Members ORDER BY Name";
+
+            SQLiteCommand command = new SQLiteCommand(memberQuery, dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                listBoxNames.Items.Add(reader["Name"]);
+            }
+
+            dbConnection.Close();
         }
     }
 }

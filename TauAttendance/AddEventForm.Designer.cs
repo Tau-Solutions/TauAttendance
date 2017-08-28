@@ -34,6 +34,7 @@
             this.dateTimePickerEvent = new System.Windows.Forms.DateTimePicker();
             this.btnSaveEvent = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.checkBoxMandatory = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -97,11 +98,22 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // checkBoxMandatory
+            // 
+            this.checkBoxMandatory.AutoSize = true;
+            this.checkBoxMandatory.Location = new System.Drawing.Point(527, 133);
+            this.checkBoxMandatory.Name = "checkBoxMandatory";
+            this.checkBoxMandatory.Size = new System.Drawing.Size(82, 17);
+            this.checkBoxMandatory.TabIndex = 6;
+            this.checkBoxMandatory.Text = "Mandatory?";
+            this.checkBoxMandatory.UseVisualStyleBackColor = true;
+            // 
             // AddEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 290);
+            this.Controls.Add(this.checkBoxMandatory);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.btnSaveEvent);
             this.Controls.Add(this.dateTimePickerEvent);
@@ -124,5 +136,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerEvent;
         private System.Windows.Forms.Button btnSaveEvent;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.CheckBox checkBoxMandatory;
     }
 }

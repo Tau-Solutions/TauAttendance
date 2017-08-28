@@ -137,6 +137,7 @@
             this.Controls.Add(this.listBoxNames);
             this.Name = "RosterForm";
             this.Text = "RosterForm";
+            this.Load += new System.EventHandler(this.RosterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
