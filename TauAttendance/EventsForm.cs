@@ -20,9 +20,17 @@ namespace TauAttendance
             InitializeComponent();
         }
 
+        public String ListBoxValue
+        {
+            get
+            {
+                return this.listBoxEvents.SelectedItem.ToString();
+            }
+        }
+
         private void buttonViewAttendance_Click(object sender, EventArgs e)
         {
-            EventAttendanceForm attendanceForm = new EventAttendanceForm();
+            EventAttendanceForm attendanceForm = new EventAttendanceForm(listBoxEvents.GetItemText(listBoxEvents.SelectedItem));
             attendanceForm.ShowDialog();
         }
 

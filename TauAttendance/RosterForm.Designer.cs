@@ -63,9 +63,9 @@
             this.listBoxPercentages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxPercentages.FormattingEnabled = true;
             this.listBoxPercentages.ItemHeight = 20;
-            this.listBoxPercentages.Location = new System.Drawing.Point(342, 82);
+            this.listBoxPercentages.Location = new System.Drawing.Point(290, 82);
             this.listBoxPercentages.Name = "listBoxPercentages";
-            this.listBoxPercentages.Size = new System.Drawing.Size(83, 604);
+            this.listBoxPercentages.Size = new System.Drawing.Size(68, 604);
             this.listBoxPercentages.TabIndex = 2;
             // 
             // label2

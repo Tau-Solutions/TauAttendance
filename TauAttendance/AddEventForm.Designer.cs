@@ -63,13 +63,14 @@
             this.txtBoxEventTitle.Location = new System.Drawing.Point(121, 37);
             this.txtBoxEventTitle.Multiline = true;
             this.txtBoxEventTitle.Name = "txtBoxEventTitle";
-            this.txtBoxEventTitle.Size = new System.Drawing.Size(444, 46);
+            this.txtBoxEventTitle.Size = new System.Drawing.Size(444, 37);
             this.txtBoxEventTitle.TabIndex = 2;
             this.txtBoxEventTitle.TextChanged += new System.EventHandler(this.txtBoxEventTitle_TextChanged);
             // 
             // dateTimePickerEvent
             // 
             this.dateTimePickerEvent.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerEvent.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dateTimePickerEvent.Location = new System.Drawing.Point(121, 131);
             this.dateTimePickerEvent.Name = "dateTimePickerEvent";
             this.dateTimePickerEvent.Size = new System.Drawing.Size(286, 20);

@@ -1,9 +1,12 @@
 CREATE TABLE Attendance(
+  Attendance_ID INTEGER PRIMARY KEY NOT NULL,
+  Event_ID INTEGER NOT NULL,
   Event_Title   TEXT, 
+  Member_ID INTEGER NOT NULL,
    Member_name   TEXT, 
    Attended   BOOL,
-  FOREIGN KEY(Event_title) REFERENCES Events(Title),
-  FOREIGN KEY(Member_name) REFERENCES Members(Name)
+  FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
+  FOREIGN KEY(Member_ID) REFERENCES Members(Mem_ID)
 )
 
 CREATE TABLE "Events" ("Title" VARCHAR NOT NULL , "Date" DATETIME, "Mandatory" BOOL)

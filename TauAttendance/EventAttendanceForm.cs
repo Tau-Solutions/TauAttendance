@@ -7,19 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace TauAttendance
 {
     public partial class EventAttendanceForm : Form
     {
-        public EventAttendanceForm()
+        string selectedEvent;
+        SQLiteConnection dbConnection;
+
+        public EventAttendanceForm(string input)
         {
             InitializeComponent();
+            selectedEvent = input;
         }
 
         private void EventAttendanceForm_Load(object sender, EventArgs e)
         {
-           
+            //dbConnection = new SQLiteConnection("Data Source=TauAttendance.sqlite;Version=3;");
+            //dbConnection.Open();
+            //string eventQuery = "SELECT title, date FROM Events ORDER BY Date";
+
+            //SQLiteCommand command = new SQLiteCommand(eventQuery, dbConnection);
+            //SQLiteDataReader reader = command.ExecuteReader();
+
+            //while (reader.Read())
+            //{
+            //    listBoxNames.Items.Add(reader["Title"]);
+            //    listBoxAttended.Items.Add(reader["Date"]);
+            //}
+
+            //dbConnection.Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
