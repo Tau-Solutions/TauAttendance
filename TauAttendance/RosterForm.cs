@@ -43,6 +43,7 @@ namespace TauAttendance
                 if (mb == DialogResult.Yes)
                 {
                     deleteCommand.ExecuteNonQuery();
+                    listBoxNames.Items.Remove(listBoxNames.SelectedItem);                    
                     MessageBox.Show("User Deleted");
                     dbConnection.Close();
                 }
